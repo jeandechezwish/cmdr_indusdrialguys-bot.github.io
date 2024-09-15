@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Bot Discord</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2c2f33;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #7289da;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #7289da;
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #5b6eae;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .input-group {
+            margin: 15px 0;
+        }
+
+        .input-group input {
+            padding: 10px;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Bienvenue sur le site de mon Bot Discord</h1>
+        <p>Gérez votre serveur facilement avec notre bot !</p>
+
+        <!-- Bouton pour inviter le bot -->
+        <a href="https://discord.com/oauth2/authorize?client_id=1267971797463077037&scope=bot&permissions=1759218604441591" class="btn">
+            Inviter mon bot
+        </a>
+
+        <!-- Formulaire de connexion avec OAuth2 -->
+        <h2>Connexion via Discord</h2>
+        <a href="https://discord.com/api/oauth2/authorize?client_id=1267971797463077037&redirect_uri=https://jeandechezwish.github.io/cmdr_indusdrialguys-bot.github.io/&response_type=code&scope=identify%20guilds" class="btn">
+            Se connecter avec Discord
+        </a>
+    </div>
+
+</body>
+</html>
