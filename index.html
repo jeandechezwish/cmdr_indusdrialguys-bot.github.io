@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Bot Discord</title>
+    <title>Mon Bot Discord - Tableau de Bord</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,10 +11,34 @@
             color: #fff;
             text-align: center;
             padding: 20px;
+            margin: 0;
         }
 
-        h1 {
+        header {
+            background-color: #23272a;
+            padding: 10px 0;
+        }
+
+        header h1 {
             color: #7289da;
+            margin: 0;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: #7289da;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
         }
 
         .btn {
@@ -34,40 +58,96 @@
             background-color: #5b6eae;
         }
 
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
+        footer {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #999;
         }
 
-        .input-group {
-            margin: 15px 0;
+        .stats-section {
+            margin-top: 30px;
+            text-align: left;
         }
 
-        .input-group input {
-            padding: 10px;
-            width: 100%;
-            border: none;
-            border-radius: 5px;
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .stat-box {
+            background-color: #424549;
+            padding: 20px;
+            border-radius: 10px;
+            width: 45%;
+            text-align: center;
+        }
+
+        .stat-box h3 {
+            color: #7289da;
+            font-size: 28px;
+        }
+
+        .stat-box p {
+            font-size: 20px;
         }
     </style>
 </head>
 <body>
 
+    <!-- En-tête et navigation -->
+    <header>
+        <h1>Mon Bot Discord</h1>
+        <nav>
+            <a href="#">Accueil</a>
+            <a href="#stats">Statistiques</a>
+            <a href="#invite">Inviter le Bot</a>
+            <a href="#login">Connexion</a>
+        </nav>
+    </header>
+
     <div class="container">
-        <h1>Bienvenue sur le site de mon Bot Discord</h1>
-        <p>Gérez votre serveur facilement avec notre bot !</p>
+        <!-- Section d'accueil -->
+        <section id="home">
+            <h2>Bienvenue sur le tableau de bord de mon Bot Discord</h2>
+            <p>Gérez votre serveur, consultez les statistiques de votre bot et bien plus encore !</p>
+        </section>
 
         <!-- Bouton pour inviter le bot -->
-        <a href="https://discord.com/oauth2/authorize?client_id=1267971797463077037&scope=bot&permissions=1759218604441591" class="btn">
-            Inviter mon bot
-        </a>
+        <section id="invite">
+            <h2>Inviter le Bot sur votre serveur</h2>
+            <a href="https://discord.com/oauth2/authorize?client_id=1267971797463077037&scope=bot&permissions=1759218604441591" class="btn">
+                Inviter mon bot
+            </a>
+        </section>
+
+        <!-- Section de statistiques du bot -->
+        <section id="stats" class="stats-section">
+            <h2>Statistiques du Bot</h2>
+            <div class="stats">
+                <div class="stat-box">
+                    <h3>100+</h3>
+                    <p>Serveurs</p>
+                </div>
+                <div class="stat-box">
+                    <h3>5000+</h3>
+                    <p>Utilisateurs</p>
+                </div>
+            </div>
+        </section>
 
         <!-- Formulaire de connexion avec OAuth2 -->
-        <h2>Connexion via Discord</h2>
-        <a href="https://discord.com/api/oauth2/authorize?client_id=1267971797463077037&redirect_uri=https://jeandechezwish.github.io/cmdr_indusdrialguys-bot.github.io/&response_type=code&scope=identify%20guilds" class="btn">
-            Se connecter avec Discord
-        </a>
+        <section id="login">
+            <h2>Connexion via Discord</h2>
+            <a href="https://discord.com/api/oauth2/authorize?client_id=1267971797463077037&redirect_uri=https://jeandechezwish.github.io/cmdr_indusdrialguys-bot.github.io/&response_type=code&scope=identify%20guilds" class="btn">
+                Se connecter avec Discord
+            </a>
+        </section>
     </div>
+
+    <footer>
+        <p>&copy; 2024 Mon Bot Discord - Tous droits réservés.</p>
+    </footer>
 
 </body>
 </html>
